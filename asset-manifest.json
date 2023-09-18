@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-metrics-capstone/static/css/main.ba84761d.css",
+    "main.js": "/react-metrics-capstone/static/js/main.9d62985a.js",
+    "index.html": "/react-metrics-capstone/index.html",
+    "main.ba84761d.css.map": "/react-metrics-capstone/static/css/main.ba84761d.css.map",
+    "main.9d62985a.js.map": "/react-metrics-capstone/static/js/main.9d62985a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba84761d.css",
+    "static/js/main.9d62985a.js"
+  ]
+}
