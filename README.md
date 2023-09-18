@@ -66,7 +66,7 @@
 ## 🚀 Demo <a name="live-demo"></a>
 
 - [🔗 Live Demo Link](https://axcell-0.github.io/react-metrics-capstone/)
-- [🔗 Presentation link](https://www.loom.com/share/acb6e5ab816b4769843d891526e5c6d3?sid=99247d85-5a55-4c4f-b4e9-4bce90a47e49)
+- [🔗 Presentation link](https://drive.google.com/file/d/1E11kvcin9P6dRUl1m5N9ZlWntluSylsL/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
