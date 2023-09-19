@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-metrics-capstone/static/css/main.ba84761d.css",
-    "main.js": "/react-metrics-capstone/static/js/main.9d62985a.js",
+    "main.css": "/react-metrics-capstone/static/css/main.f18f5888.css",
+    "main.js": "/react-metrics-capstone/static/js/main.b3f0cdb6.js",
     "index.html": "/react-metrics-capstone/index.html",
-    "main.ba84761d.css.map": "/react-metrics-capstone/static/css/main.ba84761d.css.map",
-    "main.9d62985a.js.map": "/react-metrics-capstone/static/js/main.9d62985a.js.map"
+    "main.f18f5888.css.map": "/react-metrics-capstone/static/css/main.f18f5888.css.map",
+    "main.b3f0cdb6.js.map": "/react-metrics-capstone/static/js/main.b3f0cdb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba84761d.css",
-    "static/js/main.9d62985a.js"
+    "static/css/main.f18f5888.css",
+    "static/js/main.b3f0cdb6.js"
   ]
 }
