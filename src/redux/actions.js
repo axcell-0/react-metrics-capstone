@@ -12,16 +12,14 @@ export const setCountryData = (data) => ({
 
 export const fetchCountryData = (countryName) => async (dispatch) => {
   try {
-    const response = await axios.get(
-      `https://restcountries.com/v2/name/${countryName}`,
-    );
+    let url = 'https://restcountries.com/v2/all';
+    if (countryName && countryName !== 'all') {
+      url = `https://restcountries.com/v2/name/${countryName}`;
+    }
+    const response = await axios.get(url);
     const { data } = response;
 
-    if (data.length === 0) {
-      dispatch(setCountryData([]));
-    } else {
-      dispatch(setCountryData(data));
-    }
+    dispatch(setCountryData(data));
   } catch (error) {
     dispatch(setCountryData([]));
   }
