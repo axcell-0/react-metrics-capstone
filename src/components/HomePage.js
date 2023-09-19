@@ -10,8 +10,9 @@ const HomePage = () => {
   const countryData = useSelector((state) => state.countryData);
 
   useEffect(() => {
-    dispatch(fetchCountryData(countryName));
-  }, [dispatch, countryName]);
+    dispatch(fetchCountryData('all'));
+  }, [dispatch]);
+  const filteredData = countryData.filter((country) => country.name.toLowerCase().includes(countryName.toLowerCase()));
 
   return (
     <div>
@@ -20,17 +21,17 @@ const HomePage = () => {
         <input
           type="text"
           className="p-1 border-2 border-white ease-in rounded-md text-sky-700"
-          placeholder="Enter country name"
+          placeholder="Enter country name to filter"
           value={countryName}
           onChange={(e) => dispatch(setCountryName(e.target.value))}
         />
       </div>
       <p className="text-white bg-sky-800 p-1 font-lato">country by Category</p>
       <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        {countryData.length === 0 ? (
-          <li>No country data available.</li>
+        {filteredData.length === 0 ? (
+          <li>No matching countries found.</li>
         ) : (
-          countryData.map((country) => (
+          filteredData.map((country) => (
             <Link to={`/details/${country.alpha3Code}`} key={country.alpha3Code}>
               <li className="relative odd:bg-sky-700 even:bg-sky-600 text-white h-64">
                 <img src={country.flags.png} alt={`${country.name} flag`} className="w-64 md:w-72" />
